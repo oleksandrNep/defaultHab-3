@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Habits Tracker</title>
+    <link rel="stylesheet" href="../css/global.css" />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <nav>
+          <li><a href="../pages/today.html">Today</a></li>
+          <li><a href="../pages/progress.html">Progress</a></li>
+          <li><a href="../pages/planned.html">Planned</a></a></li>
+          <li><a href="../pages/all-habits.html">My Habits</a></li>
+          <li><a href="../pages/all-notifications.html">My Notifications</a></li>
+        </nav>
+      </ul>
+    </header>
+    
+    <table border="1">
+      <tr>
+        <th>Habit</th>
+        <th>Frequency</th>
+        <th>Notes</th>
+      </tr>
+      <tr>
+        <td>Learn English</td>
+        <td>daily</td>
+        <td>Don't forget about grammar</td>
+      </tr>
+      <tr>
+        <td>Learn Spanish</td>
+        <td>daily</td>
+        <td>Don't forget about accent</td>
+      </tr>
+    </table>
+
+    <button class="add-button" onclick="toNewHabit();">Add habit</button><br>
+    <button onclick="toNewNotification();">Add notification</button>
+
+    <script src = "../js/script.js"></script>
+  </body>
+</html>
