@@ -5,6 +5,29 @@
   background-color: #2E3944;
 }
 
+@media (max-width: 1400px) {
+  html {
+    font-size: 25px;
+  }
+}
+
+ /* Tablet screen  */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* Mobile screen  */
+
+@media (max-width: 450px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+
 .add-hab-button{
   position: fixed;
   /* margin: 60% 5% 35% 75%; */
