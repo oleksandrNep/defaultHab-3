@@ -5,7 +5,15 @@
   background-color: #2E3944;
 }
 
-@media (max-width: 1400px) {
+p{
+  background-color: transparent !important;
+}
+
+html{
+  font-size: 16px;
+}
+
+@media (max-width: 2000px) {
   html {
     font-size: 25px;
   }
@@ -27,6 +35,9 @@
   }
 }
 
+body{
+  min-height: 70vh;
+}
 
 .add-hab-button{
   position: fixed;
@@ -76,12 +87,12 @@
   border: #748D92 1px solid;
 }
 
-.header-td:hover{
+.header-td:hover, .header-td:hover a{
     background-color: #D3D9D4;
     color: black;
 }
 
-.header-td:active {
+.header-td:active, .header-td:active a {
     background-color: #124E66;
 }
 
@@ -138,17 +149,62 @@ li:active {
 
 .chapter-name{
   background-color: #141414;
-  font-size: 300%;
+  font-size: 3rem;
   margin-left: 10vw;
 }
 
 input{
-  margin: 0px;
-  border: 5px solid black;
-  width: 50%;
-  height: 50%;
+  margin: 1vh;
+  border: 1px solid #124E66;
+  width: 30vw;
+  height: 5vh;
 }
 
 input[type="radio"] {
   accent-color: #124E66; 
+  margin: 0px;
+  border: 5px solid black;
+  width: 40%;
+  height: 40%;
+}
+
+form{
+  background-color: #748D92;
+}
+
+.start-div{
+  width: 35vw;
+  height: 40vh;
+  margin: 30vh 40vw;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #748D92;
+}
+
+.start-p{
+  background-color: #748D92;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.start-form{
+  margin-top: 5vh;
+}
+
+.log-in-btn{
+  width: 15vw;
+  height: 5vh;
+}
+
+.sign-in-btn{
+  width: 15vw;
+  height: 5vh;
+}
+
+.already-account-txt{
+  margin-top: 5vh;
+  font-size: 0.7rem;
+  width: 35vw;
+  height: 5vh;
+  text-align: right;
 }
