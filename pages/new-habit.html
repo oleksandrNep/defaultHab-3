@@ -13,8 +13,8 @@
             <td class="header-td"><a href="../pages/planned.html">Planned</a></td>
           </tr>
           <tr>
-            <td class="header-td"><a href="../pages/all-habits.html">My Habits</a></td>
-            <td class="header-td"><a href="../pages/all-notifications.html">My Notifications</a></td>
+            <td class="header-td"><a href="../pages/all-habits.html">My habits</a></td>
+            <td class="header-td"><a href="../pages/all-notifications.html">My notifications</a></td>
           </tr>
           <tr>
             <td colspan="2" class="header-td"><a href="../pages/today.html">Today</a></td>
@@ -24,23 +24,24 @@
     </header>
 
     <main>
-      <table>
-        <tr>
-          <th>Habit</th>
-          <th>Frequency</th>
-          <th>Notes</th>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
-
-      <br><button>Add habit</button>
-
-      <button onclick="toNewNotification();">Add notification</button>
-
+      <!-- <button class="add-hab-button" onclick="toNewHabit();">Add habit</button> -->
+      <button class="add-not-button" onclick="toNewNotification();">Add notification</button>
+      <h1 class="chapter-name">Add habit</h1>
+      <form>
+        <table class="general-habs">
+          <tr>
+            <th class="general-th">Habit</th>
+            <th class="general-th">Frequency</th>
+            <th class="general-th">Notes</th>
+          </tr>
+          <tr>
+            <td class="general-td"><input type="text" placeholder="Name of habit" required></td>
+            <td class="general-td"><input type="text" placeholder="Frequency (24h, 48h, etc.)" required></td>
+            <td class="general-td"><input type="text" placeholder="Notes for the new habit"></td>
+          </tr>
+        </table>
+      </form>
+      <button class="save-not-hab-btn">Save new habit</button>
       <script src = "../js/script.js"></script>
   </main>
   </body>

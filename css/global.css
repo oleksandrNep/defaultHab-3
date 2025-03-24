@@ -9,6 +9,11 @@ p{
   background-color: transparent !important;
 }
 
+h2{
+  background-color: transparent !important;
+  margin-left: 2rem;
+}
+
 html{
   font-size: 16px;
 }
@@ -39,6 +44,14 @@ body{
   min-height: 70vh;
 }
 
+button{
+  background-color: #124E66;
+}
+
+h1{
+  padding-top: 0.2rem;
+}
+
 .add-hab-button{
   position: fixed;
   /* margin: 60% 5% 35% 75%; */
@@ -49,6 +62,7 @@ body{
   height: 7vh;
   background-color: #124E66;
   border: 1px black solid;
+  font-size: 0.5rem;
 }
 
 .add-hab-button:hover{
@@ -64,18 +78,28 @@ body{
   height: 7vh;
   background-color: #124E66;
   border: 1px black solid;
+  font-size: 0.5rem;
 }
 
-.add-not-button:hover{
+.add-not-button:hover, .save-not-hab-btn:hover{
   background-color: #D3D9D4;
   color: black;
 }
 
+main {
+  background-color: #141414;
+  min-height: 80vh;
+  padding-top: 17vh;
+  margin: 0;
+  border-top: none;
+}
+
 .header-element{
   background-color: #2E3944;
-  font-size: 130%;
+  font-size: 1.3rem;
   /* margin: -50px 0px 10px -10px; */
-  margin: -15vh 0% 0% 0% ;
+  /* margin: -15vh 0% 0% 0% ; */
+  /* padding-top: 100vh; */
   border-collapse: collapse;
   text-align: center;
   width: 100%;
@@ -92,19 +116,12 @@ body{
     color: black;
 }
 
-.header-td:active, .header-td:active a {
+.header-td:active, .header-td:active a, .save-not-hab-btn:active{
     background-color: #124E66;
+    color: white;
 }
 
-main{
-  background-color: #141414;
-  margin: 15vh 0px 0px 0px/*10px 0px 10px*/;
-  min-height: 80vh;
-  /* padding: 10px; */
-  
-}
-
-.today-habs{
+.general-habs{
   background-color: #141414;
   width: 100vw;
   text-align: center;
@@ -112,7 +129,7 @@ main{
   border: none;
 }
 
-.today-th, .today-td{
+.general-th, .general-td{
   background-color: #141414;
   border: none;
   border-bottom: 1px solid rgb(0, 0, 0);
@@ -123,7 +140,7 @@ main{
 table {
     border: 1px solid;
     border-collapse: collapse;
-    width: 50%;
+    width: 70%;
 }
 
 td, th{
@@ -191,14 +208,10 @@ form{
   margin-top: 5vh;
 }
 
-.log-in-btn{
+.log-sign-in-btn{
   width: 15vw;
   height: 5vh;
-}
-
-.sign-in-btn{
-  width: 15vw;
-  height: 5vh;
+  border-radius: 0.5rem;
 }
 
 .already-account-txt{
@@ -207,4 +220,25 @@ form{
   width: 35vw;
   height: 5vh;
   text-align: right;
+}
+
+.save-not-hab-btn{
+  width: 16vw;
+  height: 7vh;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin: 5vh 42vw;
+  border: 0px;
+}
+
+#progress-table{
+  margin: 0vh 5vw;
+  width: 90vw;
+  text-align: center;
+}
+
+.progress-table{
+  margin: 0vh 5vw;
+  width: 75vw;
+  text-align: center;
 }
