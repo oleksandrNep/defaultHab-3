@@ -6,32 +6,42 @@
   </head>
   <body>
     <header>
-      <ul>
-        <nav>
-          <li><a href="../pages/today.html">Today</a></li>
-          <li><a href="../pages/progress.html">Progress</a></li>
-          <li><a href="../pages/planned.html">Planned</a></a></li>
-          <li><a href="../pages/all-habits.html">My Habits</a></li>
-          <li><a href="../pages/all-notifications.html">My Notifications</a></li>
-        </nav>
-      </ul>
+      <nav>
+      <table class="header-element">
+          <tr>
+            <td width = 50% class="header-td"><a href="../pages/progress.html">Progress</a></td>
+            <td class="header-td"><a href="../pages/planned.html">Planned</a></td>
+          </tr>
+          <tr>
+            <td class="header-td"><a href="../pages/all-habits.html">My habits</a></td>
+            <td class="header-td"><a href="../pages/all-notifications.html">My notifications</a></td>
+          </tr>
+          <tr>
+            <td colspan="2" class="header-td"><a href="../pages/today.html">Today</a></td>
+          </tr>
+        </table>
+      </nav>
     </header>
 
     <main>
       <button class="add-hab-button" onclick="toNewHabit();">Add habit</button>
       <button class="add-not-button" onclick="toNewNotification();">Add notification</button>
-      <h1 class="chapter-name">Today</h1>
-
-    <table class="today-habs"><!--later I'll just copy code from this class and put it into all tables but without button of completing-->
+      <h1 class="chapter-name">My Habits</h1>
+    <table class="general-habs">
       <tr>
-        <th class="today-th">Habit</th>
-        <th class="today-th">Frequency</th>
-        <th class="today-th">Notes</th>
+        <th class="general-th">Habit</th>
+        <th class="general-th">Frequency</th>
+        <th class="general-th">Notes</th>
       </tr>
       <tr>
-        <td class="today-td">Brush my teeth</td>
-        <td class="today-td">daily</td>
-        <td class="today-td"></td>
+        <td class="general-td">Learn English</td>
+        <td class="general-td">daily</td>
+        <td class="general-td">Don't forget about grammar</td>
+      </tr>
+      <tr>
+        <td class="general-td">Brush my teeth</td>
+        <td class="general-td">daily</td>
+        <td class="general-td"></td>
       </tr>
     </table>
 
